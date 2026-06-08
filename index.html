@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jay Prakash — Software Engineer & App Developer</title>
+  <meta name="description" content="Portfolio of Jay Prakash. Products, apps, and projects including Always-On-Top Tasks for Windows." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📌</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand"><span class="dot"></span> Jay Prakash</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/iam-jay" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Software Engineer · Microsoft</span>
+        <h1>I build <span class="grad">useful apps</span> that ship.</h1>
+        <p class="lead">
+          I design and develop desktop and productivity software. Below are the products
+          I'm building and shipping — including my latest Windows app heading to the Microsoft Store.
+        </p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary">View Products →</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="num">.NET</div><div class="lbl">Primary stack</div></div>
+          <div class="stat"><div class="num">Windows</div><div class="lbl">Target platform</div></div>
+          <div class="stat"><div class="num">1+</div><div class="lbl">Products shipping</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/app-mockup.svg" alt="Preview of the Always-On-Top Tasks app" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Products ===== -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="products-head">
+        <div>
+          <span class="eyebrow">Products</span>
+          <h2 class="section-title">Things I've built</h2>
+          <p class="section-sub">Apps and tools I've designed, developed, and published.</p>
+        </div>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- Featured product -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/app-mockup.svg" alt="Always-On-Top Tasks app preview" />
+          </div>
+          <div class="product-body">
+            <span class="badge badge-soon">Coming soon · Microsoft Store</span>
+            <h3>Always-On-Top Tasks</h3>
+            <p>
+              A lightweight, always-on-top task board for Windows with New / Active / Done / Cancel
+              columns, extend-only timelines, and live overdue tracking. Your tasks stay pinned above
+              every window so you never lose focus.
+            </p>
+            <div class="tag-row">
+              <span class="badge badge-tech">C# / .NET</span>
+              <span class="badge badge-tech">WPF</span>
+              <span class="badge badge-tech">MSIX</span>
+            </div>
+            <div class="product-actions">
+              <a href="products/always-on-top-tasks.html" class="link-arrow">View details →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder for future product -->
+        <article class="product-card">
+          <div class="product-thumb" style="display:flex;align-items:center;justify-content:center;min-height:180px;color:var(--muted-2);">
+            <span>More coming soon…</span>
+          </div>
+          <div class="product-body">
+            <span class="badge badge-tech">In progress</span>
+            <h3>Your next product</h3>
+            <p>This space is reserved for the next app. Duplicate the featured card to add it.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about" style="background:var(--bg-soft);border-top:1px solid var(--border);">
+    <div class="container about-grid">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2 class="section-title">Hi, I'm Jay 👋</h2>
+      </div>
+      <div>
+        <p style="color:var(--muted);">
+          I'm a software engineer focused on building polished, practical applications.
+          I enjoy turning everyday workflow problems into clean, fast tools. Currently I'm
+          shipping Windows productivity apps to the Microsoft Store.
+          <em>(Edit this paragraph with your own bio.)</em>
+        </p>
+        <div class="skills">
+          <span class="chip">C#</span>
+          <span class="chip">.NET</span>
+          <span class="chip">WPF</span>
+          <span class="chip">XAML</span>
+          <span class="chip">MSIX</span>
+          <span class="chip">Git / GitHub</span>
+          <span class="chip">HTML / CSS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h2 class="section-title">Let's build something</h2>
+      <p class="section-sub" style="margin-inline:auto;">
+        Interested in my work or want to collaborate? Reach out.
+      </p>
+      <a href="mailto:your-email@example.com" class="btn btn-primary">Email me</a>
+      <div class="social">
+        <a href="https://github.com/iam-jay" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com/your-handle" target="_blank" rel="noopener">X / Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Jay Prakash. Built with plain HTML & CSS.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

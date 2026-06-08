@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Always-On-Top Tasks — Jay Prakash</title>
+  <meta name="description" content="Always-On-Top Tasks: a pinned, always-visible task board for Windows. New / Active / Done / Cancel columns, extend-only timelines, and live overdue tracking." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📌</text></svg>" />
+
+  <!-- Open Graph: nice preview when you share the URL -->
+  <meta property="og:title" content="Always-On-Top Tasks for Windows" />
+  <meta property="og:description" content="A pinned, always-visible task board with live overdue tracking. Coming soon to the Microsoft Store." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../assets/app-mockup.svg" />
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html#home" class="brand"><span class="dot"></span> Jay Prakash</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#products">Products</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="https://github.com/iam-jay" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Detail hero ===== -->
+  <section class="detail-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html#products">Products</a> / Always-On-Top Tasks</div>
+      <div class="detail-grid">
+        <div>
+          <span class="badge badge-soon" id="statusBadge">Coming soon · Microsoft Store</span>
+          <h1 class="section-title" style="margin:14px 0;">Always-On-Top Tasks</h1>
+          <p style="color:var(--muted);font-size:1.05rem;">
+            A lightweight task board for Windows that stays pinned above every other window,
+            so your to-dos are always in sight. Built for focus: a strict, forward-only workflow
+            and honest, live overdue tracking that never lets a task quietly slip.
+          </p>
+
+          <!-- Microsoft Store button — replace href once published -->
+          <div style="display:flex;gap:14px;flex-wrap:wrap;margin:26px 0;">
+            <a id="storeLink"
+               href="#"
+               data-store-url="REPLACE_WITH_MICROSOFT_STORE_URL"
+               class="store-badge" target="_blank" rel="noopener">
+              <svg class="ms-logo" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="1" y="1" width="10" height="10" fill="#F25022"/>
+                <rect x="13" y="1" width="10" height="10" fill="#7FBA00"/>
+                <rect x="1" y="13" width="10" height="10" fill="#00A4EF"/>
+                <rect x="13" y="13" width="10" height="10" fill="#FFB900"/>
+              </svg>
+              <span><small>Get it from</small><strong>Microsoft Store</strong></span>
+            </a>
+            <a href="https://github.com/iam-jay/todo" target="_blank" rel="noopener" class="btn btn-ghost">View source on GitHub ↗</a>
+          </div>
+          <p id="storeNote" style="color:var(--muted-2);font-size:.85rem;">
+            🔧 Listing not live yet — this button will activate once the app is published.
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <img src="../assets/app-mockup.svg" alt="Always-On-Top Tasks app screenshot" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="section" style="padding-top:32px;">
+    <div class="container">
+      <span class="eyebrow">Features</span>
+      <h2 class="section-title">Designed for focus</h2>
+      <div class="detail-grid" style="margin-top:28px;">
+        <ul class="feature-list">
+          <li><span class="ic">✓</span><span><strong>Always on top.</strong> The window stays pinned above all others until you close it (with a toggle).</span></li>
+          <li><span class="ic">✓</span><span><strong>Four clear stages.</strong> New, Active, Done, and Cancel — nothing more to think about.</span></li>
+          <li><span class="ic">✓</span><span><strong>Forward-only flow.</strong> Tasks move New → Active → Done/Cancel and never go backward.</span></li>
+          <li><span class="ic">✓</span><span><strong>Extend-only timelines.</strong> Once set, a deadline can only be extended — shown with an "Extended" badge.</span></li>
+          <li><span class="ic">✓</span><span><strong>Live overdue tracking.</strong> Past-due tasks show a red, ticking <em>OVERDUE</em> counter.</span></li>
+          <li><span class="ic">✓</span><span><strong>Hour-based scheduling.</strong> Activating a task sets the start to now and asks for a duration in hours.</span></li>
+          <li><span class="ic">✓</span><span><strong>Saves automatically.</strong> Everything is stored locally and restored on restart.</span></li>
+        </ul>
+
+        <div class="panel">
+          <h3 style="margin-bottom:6px;">At a glance</h3>
+          <dl class="kv">
+            <dt>Platform</dt><dd>Windows 10 / 11</dd>
+            <dt>Tech</dt><dd>C# · .NET · WPF</dd>
+            <dt>Packaging</dt><dd>MSIX (Microsoft Store)</dd>
+            <dt>Price</dt><dd>Free</dd>
+            <dt>Data</dt><dd>Stored locally (JSON), no account needed</dd>
+            <dt>Status</dt><dd>Preparing for Store submission</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Jay Prakash · <a href="../index.html" style="color:var(--accent);">Back to portfolio</a></div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
