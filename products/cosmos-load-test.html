@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CosmosLoadTest — Jay Prakash</title>
+  <meta name="description" content="CosmosLoadTest: a .NET 8 load-testing tool for Azure Cosmos DB. Drives all 9 document operations with a configurable mix and produces an HTML report. One-click deploy to an Azure VM." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📌</text></svg>" />
+
+  <!-- Open Graph: nice preview when you share the URL -->
+  <meta property="og:title" content="CosmosLoadTest — Azure Cosmos DB load tester" />
+  <meta property="og:description" content="A .NET 8 tool that drives a configurable Cosmos DB workload across all 9 document operations and produces an HTML report. One-click deploy to an Azure VM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../assets/cosmos-load-test.svg" />
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html#home" class="brand"><span class="dot"></span> Jay Prakash</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#products">Products</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="https://github.com/iam-jay" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Detail hero ===== -->
+  <section class="detail-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html#products">Products</a> / CosmosLoadTest</div>
+      <div class="detail-grid">
+        <div>
+          <span class="badge badge-tech">Open source · Developer tool</span>
+          <h1 class="section-title" style="margin:14px 0;">CosmosLoadTest</h1>
+          <p style="color:var(--muted);font-size:1.05rem;">
+            A .NET 8 command-line tool that drives a configurable load against
+            <strong>Azure Cosmos DB (NoSQL)</strong> across all nine document operations —
+            Read, Query, Create, ReadFeed, Upsert, Patch, Replace, Delete and transactional
+            Batch. You set the request rate, total operations, document size and the
+            percentage mix per operation; it paces the workload, tracks every request,
+            and produces a clean <strong>HTML report</strong> with throughput, latency
+            percentiles and requested-vs-actual operation mix.
+          </p>
+
+          <div style="display:flex;gap:14px;flex-wrap:wrap;margin:26px 0;">
+            <a href="https://github.com/iam-jay/CosmosLoadTest" target="_blank" rel="noopener" class="btn btn-primary">View source on GitHub ↗</a>
+            <a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fiam-jay%2FCosmosLoadTest%2Fmain%2Fdeploy%2Ftemplate.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fiam-jay%2FCosmosLoadTest%2Fmain%2Fdeploy%2FcreateUiDefinition.json"
+               target="_blank" rel="noopener" class="btn btn-ghost">Deploy to Azure ↗</a>
+          </div>
+          <p style="color:var(--muted-2);font-size:.85rem;">
+            🚀 One click spins up a Windows VM that downloads, builds and runs the workload — fill the form in the Azure Portal, no setup required.
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <img src="../assets/cosmos-load-test.svg" alt="CosmosLoadTest HTML report preview" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="section" style="padding-top:32px;">
+    <div class="container">
+      <span class="eyebrow">Features</span>
+      <h2 class="section-title">Built for realistic load</h2>
+      <div class="detail-grid" style="margin-top:28px;">
+        <ul class="feature-list">
+          <li><span class="ic">✓</span><span><strong>All 9 document operations.</strong> Read, Query, Create, ReadFeed, Upsert, Patch, Replace, Delete and transactional Batch.</span></li>
+          <li><span class="ic">✓</span><span><strong>Configurable mix.</strong> Set a percentage per operation; any operation at 0% is skipped.</span></li>
+          <li><span class="ic">✓</span><span><strong>Quota-based scheduler.</strong> Paces to a global requests/sec; when an operation hits its target it drops out and its share redistributes.</span></li>
+          <li><span class="ic">✓</span><span><strong>Smart document pool.</strong> Pre-seeds data when Create isn't in the mix; otherwise reuses documents created during the run.</span></li>
+          <li><span class="ic">✓</span><span><strong>HTML report.</strong> Totals, success/error, ops-per-minute, latency p50/p95/p99, average RU and requested-vs-actual mix.</span></li>
+          <li><span class="ic">✓</span><span><strong>One-click Azure deploy.</strong> An ARM template + portal wizard spin up a Windows VM that builds and runs it automatically.</span></li>
+        </ul>
+
+        <div class="panel">
+          <h3 style="margin-bottom:6px;">At a glance</h3>
+          <dl class="kv">
+            <dt>Type</dt><dd>CLI load-testing tool</dd>
+            <dt>Tech</dt><dd>C# · .NET 8 · Azure Cosmos DB SDK</dd>
+            <dt>Target</dt><dd>Azure Cosmos DB (NoSQL API)</dd>
+            <dt>Deploy</dt><dd>ARM template · Windows VM · Azure Portal</dd>
+            <dt>Output</dt><dd>Self-contained HTML report</dd>
+            <dt>License</dt><dd>Open source on GitHub</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Jay Prakash · <a href="../index.html" style="color:var(--accent);">Back to portfolio</a></div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
